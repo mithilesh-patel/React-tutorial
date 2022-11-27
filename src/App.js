@@ -1,23 +1,24 @@
-import logo from './logo.svg';
+
 import './App.css';
+import Newcomponent from './components/Newcomponent';
+import { Nhi} from "./components/Wo";
+
+
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>Hello World </h1>
+      <p>This is a para tag</p>
+      <Newcomponent text="Mithilesh" />
+
+
+      
+              
+      <Nhi name ="Virat" surname= "Kohli" email="Virat@gmail.com" other={{address : "Delhi", mob :"12345"}}/>
+      
+
+      <Nhi name="Anil" surname= "Kumble" email="anil@gmail.com" other={{address : "Delhi", mob :"12345"}}/>
     </div>
   );
 }

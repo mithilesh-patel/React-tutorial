@@ -1,5 +1,5 @@
 import React from "react";
-import { useState } from "react";
+import { useState ,useEffect } from "react";
 
 
 export function Nhi(props) {
@@ -23,6 +23,10 @@ export function Nhi(props) {
 
 export function Wo() {
     const [data, setData] = useState(0);
+
+
+
+
     function increment() {
         setData(aprev => aprev + 4);
 
@@ -33,6 +37,10 @@ export function Wo() {
         setData(aprev => aprev - 1);
     }
 
+
+    useEffect(()=>{
+        document.title=`clicked ${data} times`
+    },[data])  
 
     return (
 
